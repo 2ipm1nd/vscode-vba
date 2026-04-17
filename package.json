@@ -1,11 +1,11 @@
 {
   "name": "vscode-vba",
-  "displayName": "VBA",
-  "description": "VBA and VB6 tooling, syntax highlighting and snippets.",
+  "displayName": "VBA (with Outline)",
+  "description": "VBA and VB6 tooling, syntax highlighting, snippets and document outline.",
   "icon": "images/icon.png",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "license": "MPL-2.0",
-  "publisher": "serkonda7",
+  "publisher": "2ipm1nd",
   "repository": {
     "type": "git",
     "url": "https://github.com/serkonda7/vscode-vba"
@@ -32,7 +32,10 @@
     }
   },
   "activationEvents": [
-    "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}"
+    "workspaceContains:**/*.{docm,xlsm,pptm,xlam,ppam}",
+    "onLanguage:vba",
+    "onLanguage:vb6",
+    "onLanguage:wwb"
   ],
   "contributes": {
     "languages": [
